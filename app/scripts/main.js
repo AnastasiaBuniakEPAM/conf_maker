@@ -17,7 +17,7 @@ var App = React.createClass({
   render: function() {
     return (
         <BasicLayout />
-    )
+    );
   }
 });
 
@@ -27,5 +27,5 @@ React.render(<App /*{...intlData}*//>, document.getElementById('app'));
 if (window.CM_DATA.env === 'development') {
   var liveReload = document.createElement('script');
   liveReload.src = '//localhost:9091';
-  document.body.appendChild(liveReload)
+  document.body.appendChild(liveReload);
 }

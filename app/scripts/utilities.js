@@ -34,12 +34,12 @@ var utilities = {
       day = date.getDate();
       hours = date.getHours();
       minutes = date.getMinutes();
-      if (month < 10) {month = '0' + month};
-      if (day < 10) {day = '0' + day};
-      if (hours < 10) {hours = '0' + hours};
-      if (minutes < 10) {minutes = '0' + minutes};
+      if (month < 10) {month = '0' + month;};
+      if (day < 10) {day = '0' + day;};
+      if (hours < 10) {hours = '0' + hours;};
+      if (minutes < 10) {minutes = '0' + minutes;};
       formatted = '' + year + month + day + 'T' + hours + minutes + '00';
-      return formatted
+      return formatted;
     }
   },
   calendLinks: {
@@ -50,8 +50,8 @@ var utilities = {
         utilities.time.convertForCalendLink(obj.time.end) +
         '&details=' + (obj.about || '') +
         '&location=' + obj.location +
-        '&trp=false&sprop=name:'
-      return calendLink
+        '&trp=false&sprop=name:';
+      return calendLink;
     },
     iCalendar: function(obj) {
       window.open(

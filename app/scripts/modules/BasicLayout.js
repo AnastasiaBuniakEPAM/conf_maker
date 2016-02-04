@@ -20,7 +20,7 @@ var LayoutBasic = React.createClass({
   getInitialState: function() {
     return {
       overview: {}
-    }
+    };
   },
   componentDidMount: function() {
     files.get('modules/overview',  function(data) {
